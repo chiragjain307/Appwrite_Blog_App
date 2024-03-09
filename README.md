@@ -1,13 +1,13 @@
 # Blog Website
 
-[![GitHub license](https://img.shields.io/github/license/chiragjain307/Portfolio-Website)](https://github.com/chiragjain307/Portfolio-Website/blob/main/License)
-[![GitHub stars](https://img.shields.io/github/stars/chiragjain307/Portfolio-Website)](https://github.com/chiragjain307/Portfolio-Website/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/chiragjain307/Portfolio-Website)](https://github.com/chiragjain307/Portfolio-Website/issues)
-[![GitHub forks](https://img.shields.io/github/forks/chiragjain307/Portfolio-Website)](https://github.com/chiragjain307/Portfolio-Website/network)
+[![GitHub license](https://img.shields.io/github/license/chiragjain307/Appwrite_Blog_App)](https://github.com/chiragjain307/Appwrite_Blog_App/blob/main/License)
+[![GitHub stars](https://img.shields.io/github/stars/chiragjain307/Appwrite_Blog_App)](https://github.com/chiragjain307/Appwrite_Blog_App/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/chiragjain307/Appwrite_Blog_App)](https://github.com/chiragjain307/Appwrite_Blog_App/issues)
+[![GitHub forks](https://img.shields.io/github/forks/chiragjain307/Appwrite_Blog_App)](https://github.com/chiragjain307/Appwrite_Blog_App/network)
 
-Introducing a dynamic and modern portfolio template, powered by React.js for performance and flexibility. Crafted with simplicity and versatility in mind. Leveraging the power of Tailwind CSS for sleek and responsive design, this template seamlessly integrates dark mode functionality to enhance the user experience. With the added benefits smooth navigation, ensuring an exceptional browsing experience. Explore the live demo to witness the perfect blend of aesthetics and functionality, ready to elevate your online presence. 
+Introducing a dynamic and modern blog website, powered by React.js and Redux for exceptional performance and flexibility. Crafted with simplicity and versatility in mind, this website seamlessly integrates Tailwind CSS for sleek and responsive design. Leveraging the robust backend services of Appwrite, including authentication, database management, and storage, ensures seamless content management and enhanced security. Explore the live demo to witness the perfect blend of aesthetics and functionality, ready to elevate your online presence.
 
-View the live demo: [Portfolio](https://chirags-portfolio.vercel.app/)
+View the live demo: [Portfolio](https://bloging-webapp.vercel.app)
 
 
 ## Table of Contents
@@ -29,14 +29,14 @@ View the live demo: [Portfolio](https://chirags-portfolio.vercel.app/)
 
 ## Demo
 
-Visit the live demo: [Portfolio](https://chirags-portfolio.vercel.app)
+Visit the live demo: [Portfolio](https://bloging-webapp.vercel.app/)
 
 ## Installation
 
 To get started, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/chiragjain307/Portfolio-Website.git`
-2. Navigate to the project folder: `cd Portfolio-Website`
+1. Clone the repository: `git clone https://github.com/chiragjain307/Appwrite_Blog_App.git`
+2. Navigate to the project folder: `cd Appwrite_Blog_App`
 3. Install dependencies: `npm install`
 4. Run the development server: `npm run dev`
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000)

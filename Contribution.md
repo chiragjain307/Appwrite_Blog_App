@@ -5,7 +5,7 @@
 ## How to Contribute
 
 1. Fork the repository.
-2. Clone your forked repository: `git clone https://github.com/chiragjain307/Portfolio-Website.git`
+2. Clone your forked repository: `git clone https://github.com/chiragjain307/Appwrite_Blog_App.git`
 3. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature` or `git checkout -b bugfix/your-bugfix`
 4. Make your changes and commit them: `git commit -m 'Your commit message'`
 5. Push to the branch: `git push origin feature/your-feature` or `git push origin bugfix/your-bugfix`
@@ -17,11 +17,11 @@ Please follow the existing code style and make sure your changes pass the lintin
 
 ## Issues and Bugs
 
-If you find any issues or bugs, please [open a new issue](https://github.com/chiragjain307/Portfolio-Website/issues) and provide detailed information about the problem.
+If you find any issues or bugs, please [open a new issue](https://github.com/chiragjain307/Appwrite_Blog_App/issues) and provide detailed information about the problem.
 
 ## Feature Requests
 
-If you have a feature request, feel free to [open a new issue](https://github.com/chiragjain307/Portfolio-Website/issues) and describe the new feature you would like to see.
+If you have a feature request, feel free to [open a new issue](https://github.com/chiragjain307/Appwrite_Blog_App/issues) and describe the new feature you would like to see.
 
 ## License
 
