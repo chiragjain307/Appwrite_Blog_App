@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Container, Post_upload_form } from '../components/index'
 import { useNavigate, useParams } from 'react-router-dom'
 import appwriteService from '../appwrite/config'
@@ -11,8 +11,12 @@ function EditPost() {
     useEffect(() => {
         if (slug) {
             appwriteService.getPost(slug)
-            .then((post) => post ? setPosts(post) : null)  
-        }else{
+            .then((post) => {
+                if (post) {
+                    setPosts(post)
+                }
+            })
+        } else {
             navigate('/')
         }
     }, [slug, navigate])
