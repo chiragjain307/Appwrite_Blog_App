@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Container, PostCard } from '../components/index'
 import appwriteService from '../appwrite/config'
+import {Helmet} from "react-helmet";
 
 function Home() {
+
     const [posts, setPosts] = useState([])
     useEffect(() => {
         appwriteService.getAllPost()
@@ -12,17 +14,23 @@ function Home() {
 
     if (posts.length === 0) {
         return (
-            <div className="w-full py-8 mt-4 text-center">
-                <Container>
-                    <div className="flex flex-wrap">
-                        <div className="p-2 w-full">
-                            I <h1 className="text-2xl font-bold hover:text-gray-500">
-                                Login to read posts
-                            </h1>
+            <>
+                <Helmet>
+                    <title>Blog</title>
+                    <meta name="description" content="" />
+                </Helmet>
+                <div className="w-full py-8 mt-4 text-center">
+                    <Container>
+                        <div className="flex flex-wrap">
+                            <div className="p-2 w-full">
+                                I <h1 className="text-2xl font-bold hover:text-gray-500">
+                                    Login to read posts
+                                </h1>
+                            </div>
                         </div>
-                    </div>
-                </Container>
-            </div>
+                    </Container>
+                </div>
+            </>
         )
 
     }

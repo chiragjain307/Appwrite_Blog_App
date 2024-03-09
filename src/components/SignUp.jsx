@@ -83,7 +83,7 @@ function SignUp() {
                         />
                         <Button
                             type="submit"
-                            className='w-full'
+                            className='w-full bg-slate-600'
                         >
                             Sign Up
                         </Button>
