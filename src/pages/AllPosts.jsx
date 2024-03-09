@@ -4,12 +4,14 @@ import appwriteService from "../appwrite/config";
 
 function AllPosts() {
     const [posts, setPosts] = useState([])
-    useEffect(() => { }, [])
-    appwriteService.getAllPost([]).then((posts) => {
-        if (posts) {
-            setPosts(posts.documents)
-        }
-    })
+    useEffect(() => {
+        // Fetch posts when component mounts
+        appwriteService.getAllPost().then((posts) => {
+            if (posts) {
+                setPosts(posts.documents);
+            }
+        });
+    }, []); 
     return (
         <div className='w-full py-8'>
             <Container>
