@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { login as authLogin } from '../store/authSlice'
-import { Button, Input, Logo } from "./index"
+import { Button, Input } from "./index"
 import { useDispatch } from "react-redux"
 import authService from "../appwrite/auth_service"
 import { useForm } from "react-hook-form"
+import logo from '../../public/favicon.png'
 
 function SignUp() {
     const navigate = useNavigate()
@@ -35,7 +36,7 @@ function SignUp() {
             <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
                 <div className="mb-2 flex justify-center">
                     <span className="inline-block w-full max-w-[100px]">
-                        <Logo width="100%" />
+                        <img src={logo} alt="logo" className=' w-12' />
                     </span>
                 </div>
                 <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
