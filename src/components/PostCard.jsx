@@ -12,7 +12,7 @@ function PostCard({ $id, title, featuredImage, content }) {
                 </div>
                 <div>
                     <h2 className='text-xl font-bold text-center'>{title}</h2>
-                    <p className='p-3'>{parse(content)}</p>
+                    <div className='p-3'>{parse(content)}</div>
                 </div>
             </div>
 

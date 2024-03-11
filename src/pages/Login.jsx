@@ -4,10 +4,10 @@ import {Helmet} from "react-helmet";
 function Login() {
   return (
     <>
-    <Helmet>
+    {/* <Helmet>
         <title>Blog Login</title>
         <meta name="description" content="" />
-      </Helmet>
+      </Helmet> */}
     <div className='py-8'>
         <LoginComponent/ >
     </div>

@@ -12,15 +12,9 @@ function Home() {
             .catch((error) => console.error(error))
     }, [])
 
-
-    if (posts.length === 0) {
-        return (
-            <>
-                <Helmet>
-                    <title>Blogs</title>
-                    <meta name="description" content="" />
-                </Helmet>
-
+    return (
+        <>
+            {posts.length === 0 ? (
                 <div className="w-full py-8 mt-4 text-center">
                     <Container>
                         <div className="flex flex-wrap">
@@ -32,32 +26,24 @@ function Home() {
                         </div>
                     </Container>
                 </div>
-            </>
-        )
-
-    }
-    return (
-        <>
-            <Helmet>
-                <title>Blogs</title>
-                <meta name="description" content="" />
-            </Helmet>
-            <div className='w-full py-8 '>
-                <Container>
-                    <div className=" w-full">
-                        <h1 className="text-center text-5xl font-bold">
-                            Our Latest Posts
-                        </h1>
-                    </div>
-                    <div className='flex justify-center gap-5 mt-8'>
-                        {posts.map((post) => (
-                            <div key={post.$id} className='p-2 w-1/4'>
-                                <PostCard {...post} />
-                            </div>
-                        ))}
-                    </div>
-                </Container>
-            </div>
+            ) : (
+                <div className='w-full py-8 '>
+                    <Container>
+                        <div className=" w-full">
+                            <h1 className="text-center text-5xl font-bold">
+                                Our Latest Posts
+                            </h1>
+                        </div>
+                        <div className='flex justify-center gap-5 mt-8'>
+                            {posts.map((post) => (
+                                <div key={post.$id} className='p-2 w-1/4'>
+                                    <PostCard {...post} />
+                                </div>
+                            ))}
+                        </div>
+                    </Container>
+                </div>
+            )}
         </>
     )
 }

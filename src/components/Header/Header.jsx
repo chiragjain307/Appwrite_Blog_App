@@ -3,7 +3,7 @@ import { Container, LogoutBtn } from '../index'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import logo from '../../../public/favicon.png'
+import logo from '../../assets/favicon.png'
 
 function Header() {
   const authStatus = useSelector((state) => state.auth.status)
