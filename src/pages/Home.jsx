@@ -27,22 +27,23 @@ function Home() {
                     </Container>
                 </div>
             ) : (
-                <div className='w-full py-8 '>
+                <div className='w-full py-8'>
                     <Container>
-                        <div className=" w-full">
+                        <div className="w-full">
                             <h1 className="text-center text-5xl font-bold">
                                 Our Latest Posts
                             </h1>
                         </div>
-                        <div className='flex justify-center gap-5 mt-8'>
+                        <div className='flex justify-center gap-5 mt-8 sm:flex-wrap '>
                             {posts.map((post) => (
-                                <div key={post.$id} className='p-2 w-1/4'>
+                                <div key={post.$id} className='p-2 w-full sm:w-1/2 md:w-1/3 xl:w-1/4'>
                                     <PostCard {...post} />
                                 </div>
                             ))}
                         </div>
                     </Container>
                 </div>
+
             )}
         </>
     )
